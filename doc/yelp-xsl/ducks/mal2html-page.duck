@@ -1,0 +1,123 @@
+@ducktype/1.0
+
+= Mallard to HTML - Pages
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Handle pages, sections, and top-level data.
+@revision[version=3.8 date=2012-11-05 status=final]
+
+This stylesheet contains templates to process Mallard $sys(page) and $sys(section)
+elements, including implementations of the interfaces provided by the common
+$code[>html](html) stylesheet.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>color.bg]
+* $link[>color.blue]
+* $link[>mal.cache]
+* $link[>mal.link.default_root]
+* $link[>mal2html.editor_mode]
+
+[list .compact]
+. Calls Keys
+* $link[>mal.cache.key]
+
+[list .compact]
+. Calls Templates
+* $link[>color.blend]
+* $link[>html.class.attr]
+* $link[>html.content.post]
+* $link[>html.content.pre]
+* $link[>html.linktrails.empty]
+* $link[>html.linktrails.prefix]
+* $link[>html.output]
+* $link[>l10n.align.end]
+* $link[>l10n.align.start]
+* $link[>l10n.direction]
+* $link[>l10n.gettext]
+* $link[>mal.link.content]
+* $link[>mal.link.guidelinks]
+* $link[>mal.link.linktrails]
+* $link[>mal.link.seealsolinks]
+* $link[>mal.link.target]
+* $link[>mal.link.tooltip]
+* $link[>mal.link.topiclinks]
+* $link[>mal2html.gloss.terms]
+* $link[>mal2html.links.guide]
+* $link[>mal2html.links.prevnext]
+* $link[>mal2html.links.seealso]
+* $link[>mal2html.links.topic]
+* $link[>mal2html.ui.expander.class]
+* $link[>mal2html.ui.expander.data]
+* $link[>tmpl.file]
+
+[list .compact]
+. Calls Modes
+* $link[>mal2html.block.mode]
+* $link[>mal2html.inline.mode]
+* $link[>mal2html.title.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(/)
+[tr]
+* 
+* $code(mal:page | mal:section)
+[tr]
+* $code[>html.body.mode](html.body.mode)
+* $code(mal:page)
+[tr]
+* $code[>html.css.mode](html.css.mode)
+* $code(mal:page)
+[tr]
+* $code[>html.footer.mode](html.footer.mode)
+* $code(mal:page)
+[tr]
+* $code[>html.header.mode](html.header.mode)
+* $code(mal:page)
+[tr]
+* $code[>html.js.mode](html.js.mode)
+* $code(mal:page)
+[tr]
+* $code[>html.sidebar.contents.mode](html.sidebar.contents.mode)
+* $code(mal:page)
+[tr]
+* $code[>html.sidebar.sections.mode](html.sidebar.sections.mode)
+* $code(mal:page)
+[tr]
+* $code[>html.title.mode](html.title.mode)
+* $code(mal:page)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:copyright.years)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:copyright.name)
+[tr]
+* $code[>mal2html.title.mode](mal2html.title.mode)
+* $code(mal:title | mal:subtitle)

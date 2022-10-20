@@ -1,0 +1,65 @@
+@ducktype/1.0
+
+= Icons
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=icons]
+@desc Specify common named icons to style output.
+@revision[version=3.28 date=2017-05-24 status=final]
+
+This stylesheet provides a common interface to specify icons for transformations
+to presentation-oreinted formats. This allows similar output for different
+types of input documents.
+
+Many of the icons are output as SVG elements that can be embedded directly
+into an HTML document. These icons use class names like $sys(yelp-svg-fill) and
+$sys(yelp-svg-stroke), allowing you to style them with colors from the $code[>colors](colors)
+module.
+
+Some SVG icons are read from separate source SVG files. When this is done, the
+$code[>icons.svg.mode](icons.svg.mode) mode is applied to reduce the SVG to the minimal form needed
+for proper presentation.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Modes
+* $link[>icons.svg.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>icons.svg.mode](icons.svg.mode)
+* $code(svg:title)
+[tr]
+* $code[>icons.svg.mode](icons.svg.mode)
+* $code(svg:metadata)
+[tr]
+* $code[>icons.svg.mode](icons.svg.mode)
+* $code(svg:*)
+[tr]
+* $code[>icons.svg.mode](icons.svg.mode)
+* $code(text())
+[tr]
+* $code[>icons.svg.mode](icons.svg.mode)
+* $code(*)

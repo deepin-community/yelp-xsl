@@ -1,0 +1,42 @@
+@ducktype/1.0
+
+= DocBook Profiling
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db]
+@desc Support for DocBook effectivity attributes
+@revision[version=3.10 date=2013-08-12 status=final]
+
+This stylesheet contains utilities for handling conditional processing
+in DocBook documents.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>db.profile.arch]
+* $link[>db.profile.audience]
+* $link[>db.profile.condition]
+* $link[>db.profile.conformance]
+* $link[>db.profile.os]
+* $link[>db.profile.outputformat]
+* $link[>db.profile.revision]
+* $link[>db.profile.security]
+* $link[>db.profile.userlevel]
+* $link[>db.profile.vendor]
+* $link[>db.profile.wordsize]

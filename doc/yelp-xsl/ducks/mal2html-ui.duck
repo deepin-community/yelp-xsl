@@ -1,0 +1,64 @@
+@ducktype/1.0
+
+= Mallard to HTML - UI Extension
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Support for Mallard UI extension elements.
+
+This stylesheet contains templates to support features from the Mallard UI
+extension.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>mal.cache]
+
+[list .compact]
+. Calls Keys
+* $link[>mal.cache.key]
+
+[list .compact]
+. Calls Templates
+* $link[>l10n.direction]
+* $link[>l10n.gettext]
+* $link[>mal.link.content]
+* $link[>mal.link.desc]
+* $link[>mal.link.target]
+* $link[>mal.link.tooltip]
+
+[list .compact]
+. Calls Modes
+* $link[>_mal2html.links.divs.nolink.mode]
+* $link[>mal2html.block.mode]
+* $link[>mal2html.inline.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(uix:thumb)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(uix:overlay)

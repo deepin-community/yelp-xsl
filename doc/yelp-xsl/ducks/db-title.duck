@@ -1,0 +1,38 @@
+@ducktype/1.0
+
+= DocBook Titles
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db]
+@desc Support for DocBook title, titleabbrev, and subtitle elements.
+@revision[version=3.4 date=2011-11-10 status=final]
+
+This stylesheet contains templates for outputting titles based on title,
+titleabbrev, or subtitle elements. It supports automatic titles for certain
+elements with optional titles.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Keys
+* $link[>db.id.key]
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.chunk-id]
+* $link[>l10n.gettext]

@@ -1,0 +1,140 @@
+@ducktype/1.0
+
+= Mallard to HTML - Blocks
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Handle simple Mallard block elements.
+@revision[version=1.0 date=2010-06-03 status=final]
+
+This stylesheet contains templates for handling most Mallard block elements,
+except the list and table elements.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>html.syntax.highlight]
+* $link[>mal2html.editor_mode]
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>html.syntax.class]
+* $link[>icons.svg.figure.zoom.in]
+* $link[>icons.svg.figure.zoom.out]
+* $link[>icons.svg.note]
+* $link[>l10n.gettext]
+* $link[>mal.if.test]
+* $link[>mal2html.ui.expander.class]
+* $link[>mal2html.ui.expander.data]
+* $link[>utils.linenumbering]
+* $link[>utils.strip_newlines]
+
+[list .compact]
+. Calls Modes
+* $link[>_mal2html.choose.mode]
+* $link[>mal2html.block.mode]
+* $link[>mal2html.inline.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>_mal2html.choose.mode](_mal2html.choose.mode)
+* $code(if:when)
+[tr]
+* $code[>_mal2html.choose.mode](_mal2html.choose.mode)
+* $code(if:else)
+[tr]
+* $code[>_mal2html.choose.mode](_mal2html.choose.mode)
+* $code(*)
+[tr]
+* $code[>html.syntax.class.mode](html.syntax.class.mode)
+* $code(mal:code | mal:screen)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:comment.name)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:comment.date)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(*)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(text())
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:desc)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:code)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:comment)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:comment/mal:cite)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:div)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:example)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:figure)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:listing)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:note)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:info)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:p)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:quote)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:quote/mal:cite)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:screen)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:synopsis)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:title)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(if:choose)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(if:if)

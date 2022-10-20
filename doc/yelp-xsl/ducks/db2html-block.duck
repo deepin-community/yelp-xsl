@@ -1,0 +1,165 @@
+@ducktype/1.0
+
+= DocBook to HTML - Block Elements
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@revision[version=3.4 date=2011-11-12 status=final]
+
+This stylesheet handles most simple block-level elements, turning them into
+the appropriate HTML tags. It does not handle tables, lists, and various other
+complex block-level elements.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>html.syntax.highlight]
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.depth-in-chunk]
+* $link[>db.linenumbering.start]
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>html.syntax.class]
+* $link[>icons.svg.figure.zoom.in]
+* $link[>icons.svg.figure.zoom.out]
+* $link[>icons.svg.note]
+* $link[>icons.svg.note.caution]
+* $link[>icons.svg.note.danger]
+* $link[>icons.svg.note.important]
+* $link[>icons.svg.note.tip]
+* $link[>icons.svg.note.warning]
+* $link[>l10n.gettext]
+* $link[>utils.linenumbering]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(abstract | db:abstract)
+[tr]
+* 
+* $code(ackno)
+[tr]
+* 
+* $code(db:acknowledgements)
+[tr]
+* 
+* $code(address | db:address)
+[tr]
+* 
+* $code(attribution | db:attribution)
+[tr]
+* 
+* $code(blockquote | db:blockquote)
+[tr]
+* 
+* $code(bridgehead | db:bridgehead)
+[tr]
+* 
+* $code(caption | db:caption)
+[tr]
+* 
+* $code(caution | db:caution)
+[tr]
+* 
+* $code(epigraph | db:epigraph)
+[tr]
+* 
+* $code(equation | db:equation)
+[tr]
+* 
+* $code(example | db:example)
+[tr]
+* 
+* $code(figure | informalfigure | db:figure | db:informalfigure)
+[tr]
+* 
+* $code(formalpara | db:formalpara)
+[tr]
+* 
+* $code(highlights)
+[tr]
+* 
+* $code(important | db:important)
+[tr]
+* 
+* $code(informalequation | db:informalequation)
+[tr]
+* 
+* $code(informalexample | db:informalexample)
+[tr]
+* 
+* $code(literallayout | db:literallayout)
+[tr]
+* 
+* $code(note | db:note)
+[tr]
+* 
+* $code(para | db:para)
+[tr]
+* 
+* $code(programlisting | db:programlisting)
+[tr]
+* 
+* $code(screen | db:screen)
+[tr]
+* 
+* $code(screenshot | db:screenshot)
+[tr]
+* 
+* $code(sidebar | db:sidebar)
+[tr]
+* 
+* $code(simpara | db:simpara)
+[tr]
+* 
+* $code(synopsis | db:synopsis)
+[tr]
+* 
+* $code(task | db:task)
+[tr]
+* 
+* $code(taskprerequisites | db:taskprerequisites)
+[tr]
+* 
+* $code(taskrelated | db:taskrelated)
+[tr]
+* 
+* $code(tasksummary | db:tasksummary)
+[tr]
+* 
+* $code(tip | db:tip)
+[tr]
+* 
+* $code(title | db:title)
+[tr]
+* 
+* $code(warning | db:warning)
+[tr]
+* $code[>html.syntax.class.mode](html.syntax.class.mode)
+* $code(programlisting | db:programlisting | screen | db:screen)

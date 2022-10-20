@@ -1,0 +1,63 @@
+@ducktype/1.0
+
+= DocBook to XHTML
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2xhtml]
+@link[topic >l10n group=imports]
+@link[topic >color group=imports]
+@link[topic >icons group=imports]
+@link[topic >html group=imports]
+@link[topic >tmpl group=imports]
+@link[topic >utils group=imports]
+@link[topic >db-chunk group=imports]
+@link[topic >db-common group=imports]
+@link[topic >db-profile group=imports]
+@link[topic >db-title group=imports]
+@link[topic >db-xref group=imports]
+@link[topic >db2html-bibliography group=includes]
+@link[topic >db2html-block group=includes]
+@link[topic >db2html-callout group=includes]
+@link[topic >db2html-classsynopsis group=includes]
+@link[topic >db2html-cmdsynopsis group=includes]
+@link[topic >db2html-division group=includes]
+@link[topic >db2html-ebnf group=includes]
+@link[topic >db2html-funcsynopsis group=includes]
+@link[topic >db2html-index group=includes]
+@link[topic >db2html-inline group=includes]
+@link[topic >db2html-links group=includes]
+@link[topic >db2html-math group=includes]
+@link[topic >db2html-media group=includes]
+@link[topic >db2html-list group=includes]
+@link[topic >db2html-refentry group=includes]
+@link[topic >db2html-suppressed group=includes]
+@link[topic >db2html-table group=includes]
+@link[topic >db2html-xref group=includes]
+@link[topic >db2html-footnote group=includes]
+@desc Transform DocBook to XHTML.
+@revision[version=3.8 date=2012-11-05 status=final]
+
+This top-level stylesheet includes all the necessary stylesheets to transform
+DocBook documents into XHTML. This stylesheet sets the parameter
+$code[>db.chunk.extension](db.chunk.extension).
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>html.extension]

@@ -1,0 +1,59 @@
+@ducktype/1.0
+
+= DocBook to HTML - Tables
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+
+REMARK: This needs lots of talk about CALS
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>utils.repeat_string]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(entrytbl | db:entrytbl)
+[tr]
+* 
+* $code(table | informaltable | db:table | db:informaltable)
+[tr]
+* 
+* $code(tgroup | db:tgroup)
+[tr]
+* 
+* $code(tbody | tfoot | thead | db:tbody | db:tfoot | db:thead)
+[tr]
+* 
+* $code(tr | db:tr)
+[tr]
+* 
+* $code(td | th | db:td | db:th)

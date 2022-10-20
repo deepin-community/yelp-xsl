@@ -1,0 +1,65 @@
+@ducktype/1.0
+
+= Localized Strings
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=l10n]
+@desc Templates for translated strings, with format strings and plural forms.
+@revision[version=3.18 date=2015-07-24 status=final]
+
+This stylesheet contains templates for getting localized strings, including
+format strings and plural forms. Format strings are important for proper
+localization, as constructing sentences from concatenation often produces
+poor results in many languages.
+
+By default, the templates in this stylesheet work on the translations shipped
+with yelp-xsl, but the templates can be reused by yelp-xsl extensions (or even
+entirely separate stylesheets) by installing XML files with the translations
+under the domains subdirectory of the directory holding this file. The format
+of the file is designed to work well with itstool's join mode.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>l10n.locale]
+
+[list .compact]
+. Calls Keys
+* $link[>l10n.msgstr.key]
+
+[list .compact]
+. Calls Modes
+* $link[>l10n.format.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(*)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:node)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:string)

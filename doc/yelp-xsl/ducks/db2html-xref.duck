@@ -1,0 +1,60 @@
+@ducktype/1.0
+
+= DocBook to HTML - Links and Cross References
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+
+REMARK: Describe this module
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Keys
+* $link[>db.id.key]
+
+[list .compact]
+. Calls Templates
+* $link[>db.ulink.tooltip]
+* $link[>db.xref.content]
+* $link[>db.xref.target]
+* $link[>db.xref.tooltip]
+* $link[>html.class.attr]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(anchor | db:anchor)
+[tr]
+* 
+* $code(link)
+[tr]
+* 
+* $code(ulink)
+[tr]
+* 
+* $code(db:link)
+[tr]
+* 
+* $code(xref | db:xref)

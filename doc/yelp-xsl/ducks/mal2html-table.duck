@@ -1,0 +1,64 @@
+@ducktype/1.0
+
+= Mallard to HTML - Table Elements
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+
+REMARK: Describe this module
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>mal.if.test]
+* $link[>mal2html.ui.expander.class]
+* $link[>mal2html.ui.expander.data]
+* $link[>utils.repeat_string]
+
+[list .compact]
+. Calls Modes
+* $link[>mal2html.block.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(mal:tbody)
+[tr]
+* 
+* $code(mal:thead)
+[tr]
+* 
+* $code(mal:tfoot)
+[tr]
+* 
+* $code(mal:tr)
+[tr]
+* 
+* $code(mal:td | mal:th)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:table)

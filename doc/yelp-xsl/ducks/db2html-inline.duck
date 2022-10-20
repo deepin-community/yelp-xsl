@@ -1,0 +1,482 @@
+@ducktype/1.0
+
+= DocBook to HTML - Inline Elements
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+
+REMARK: Describe this module
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Keys
+* $link[>db.biblio.abbrev.key]
+* $link[>db.biblio.id.key]
+* $link[>db.biblio.label.key]
+* $link[>db.glossentry.key]
+
+[list .compact]
+. Calls Templates
+* $link[>db.personname]
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>db2html.xlink]
+* $link[>db2html.xref]
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>l10n.direction]
+* $link[>l10n.gettext]
+
+[list .compact]
+. Calls Modes
+* $link[>db2html.inline.content.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(abbrev | db:abbrev)
+[tr]
+* 
+* $code(accel | db:accel)
+[tr]
+* 
+* $code(acronym | db:acronym)
+[tr]
+* 
+* $code(action)
+[tr]
+* 
+* $code(artpagenums | db:artpagenums)
+[tr]
+* 
+* $code(application | db:application)
+[tr]
+* 
+* $code(author | db:author)
+[tr]
+* 
+* $code(authorinitials | db:authorinitials)
+[tr]
+* 
+* $code(db:biblioid)
+[tr]
+* 
+* $code(citation | db:citation)
+[tr]
+* 
+* $code(citetitle | db:citetitle)
+[tr]
+* 
+* $code(city | db:city)
+[tr]
+* 
+* $code(classname | db:classname)
+[tr]
+* 
+* $code(code | db:code)
+[tr]
+* 
+* $code(collab | db:collab)
+[tr]
+* 
+* $code(collabname)
+[tr]
+* 
+* $code(command | db:command)
+[tr]
+* 
+* $code(computeroutput | db:computeroutput)
+[tr]
+* 
+* $code(constant | db:constant)
+[tr]
+* 
+* $code(corpauthor)
+[tr]
+* 
+* $code(corpcredit)
+[tr]
+* 
+* $code(country | db:country)
+[tr]
+* 
+* $code(database | db:database)
+[tr]
+* 
+* $code(date | db:date)
+[tr]
+* 
+* $code(edition | db:edition)
+[tr]
+* 
+* $code(editor | db:editor)
+[tr]
+* 
+* $code(email | db:email)
+[tr]
+* 
+* $code(emphasis | db:emphasis)
+[tr]
+* 
+* $code(envar | db:envar)
+[tr]
+* 
+* $code(errorcode | db:errorcode)
+[tr]
+* 
+* $code(errorname | db:errorname)
+[tr]
+* 
+* $code(errortext | db:errortext)
+[tr]
+* 
+* $code(errortype | db:errortype)
+[tr]
+* 
+* $code(exceptionname | db:exceptionname)
+[tr]
+* 
+* $code(fax | db:fax)
+[tr]
+* 
+* $code(filename | db:filename)
+[tr]
+* 
+* $code(firstname | db:firstname)
+[tr]
+* 
+* $code(firstterm | db:firstterm)
+[tr]
+* 
+* $code(foreignphrase | db:foreignphrase)
+[tr]
+* 
+* $code(function | db:function)
+[tr]
+* 
+* $code(glossterm | db:glossterm)
+[tr]
+* 
+* $code(guibutton | db:guibutton)
+[tr]
+* 
+* $code(guiicon | db:guiicon)
+[tr]
+* 
+* $code(guilabel | db:guilabel)
+[tr]
+* 
+* $code(guimenu | db:guimenu)
+[tr]
+* 
+* $code(guimenuitem | db:guimenuitem)
+[tr]
+* 
+* $code(guisubmenu | db:guisubmenu)
+[tr]
+* 
+* $code(hardware | db:hardware)
+[tr]
+* 
+* $code(holder | db:holder)
+[tr]
+* 
+* $code(honorific | db:honorific)
+[tr]
+* 
+* $code(inlineequation | db:inlineequation)
+[tr]
+* 
+* $code(interface | db:interface)
+[tr]
+* 
+* $code(interfacename | db:interfacename)
+[tr]
+* 
+* $code(isbn | db:biblioid[@class = 'isbn'])
+[tr]
+* 
+* $code(issn | db:biblioid[@class = 'issn'])
+[tr]
+* 
+* $code(issuenum | db:issuenum)
+[tr]
+* 
+* $code(jobtitle | db:jobtitle)
+[tr]
+* 
+* $code(keycap | db:keycap)
+[tr]
+* 
+* $code(keycode | db:keycode)
+[tr]
+* 
+* $code(keycombo | db:keycombo)
+[tr]
+* 
+* $code(keysym | db:keysym)
+[tr]
+* 
+* $code(lineage | db:lineage)
+[tr]
+* 
+* $code(lineannotation | db:lineannotation)
+[tr]
+* 
+* $code(literal | db:literal)
+[tr]
+* 
+* $code(markup | db:markup)
+[tr]
+* 
+* $code(mathphrase | db:mathphrase)
+[tr]
+* 
+* $code(medialabel)
+[tr]
+* 
+* $code(menuchoice | db:menuchoice)
+[tr]
+* 
+* $code(methodname | db:methodname)
+[tr]
+* 
+* $code(mousebutton | db:mousebutton)
+[tr]
+* 
+* $code(option | db:option)
+[tr]
+* 
+* $code(optional | db:optional)
+[tr]
+* 
+* $code(db:org)
+[tr]
+* 
+* $code(orgdiv | db:orgdiv)
+[tr]
+* 
+* $code(orgname | db:orgname)
+[tr]
+* 
+* $code(othercredit | db:othercredit)
+[tr]
+* 
+* $code(othername | db:othername)
+[tr]
+* 
+* $code(package | db:package)
+[tr]
+* 
+* $code(pagenums | db:pagenums)
+[tr]
+* 
+* $code(parameter | db:parameter)
+[tr]
+* 
+* $code(db:person)
+[tr]
+* 
+* $code(personname | db:personname)
+[tr]
+* 
+* $code(phone | db:phone)
+[tr]
+* 
+* $code(phrase | db:phrase)
+[tr]
+* 
+* $code(pob | db:pob)
+[tr]
+* 
+* $code(postcode | db:postcode)
+[tr]
+* 
+* $code(productname | db:productname)
+[tr]
+* 
+* $code(productnumber | db:productnumber)
+[tr]
+* 
+* $code(prompt | db:prompt)
+[tr]
+* 
+* $code(property | db:property)
+[tr]
+* 
+* $code(pubdate | db:pubdate)
+[tr]
+* 
+* $code(publisher | db:publisher)
+[tr]
+* 
+* $code(publishername | db:publishername)
+[tr]
+* 
+* $code(ooclass | db:ooclass)
+[tr]
+* 
+* $code(ooexception | db:ooexception)
+[tr]
+* 
+* $code(oointerface | db:oointerface)
+[tr]
+* 
+* $code(quote | db:quote)
+[tr]
+* 
+* $code(replaceable | db:replaceable)
+[tr]
+* 
+* $code(returnvalue | db:returnvalue)
+[tr]
+* 
+* $code(sgmltag | db:tag)
+[tr]
+* 
+* $code(shortcut | db:shortcut)
+[tr]
+* 
+* $code(state | db:state)
+[tr]
+* 
+* $code(street | db:street)
+[tr]
+* 
+* $code(structfield)
+[tr]
+* 
+* $code(structname)
+[tr]
+* 
+* $code(subscript | db:subscript)
+[tr]
+* 
+* $code(superscript | db:superscript)
+[tr]
+* 
+* $code(surname | db:surname)
+[tr]
+* 
+* $code(symbol | db:symbol)
+[tr]
+* 
+* $code(systemitem | db:systemitem)
+[tr]
+* 
+* $code(token | db:token)
+[tr]
+* 
+* $code(trademark | db:trademark)
+[tr]
+* 
+* $code(type | db:type)
+[tr]
+* 
+* $code(uri | db:uri)
+[tr]
+* 
+* $code(userinput | db:userinput)
+[tr]
+* 
+* $code(varname | db:varname)
+[tr]
+* 
+* $code(volumenum | db:volumenum)
+[tr]
+* 
+* $code(wordasword | db:wordasword)
+[tr]
+* 
+* $code(year | db:year)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(*)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(author | db:author)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(citation | db:citation)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(editor | db:editor)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(email | db:email)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(firstterm | db:firstterm)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(glossterm | db:glossterm)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(keycap | db:keycap)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(keycombo | db:keycombo)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(menuchoice | db:menuchoice)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(optional | db:optional)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(othercredit | db:othercredit)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(db:person)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(personname | db:personname)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(productname | db:productname)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(ooclass | db:ooclass)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(ooexception | db:ooexception)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(oointerface | db:oointerface)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(quote | db:quote)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(sgmltag | db:tag)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(shortcut | db:shortcut)
+[tr]
+* $code[>db2html.inline.content.mode](db2html.inline.content.mode)
+* $code(trademark | db:trademark)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:citation.label)

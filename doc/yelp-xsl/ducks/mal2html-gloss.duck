@@ -1,0 +1,60 @@
+@ducktype/1.0
+
+= Mallard to HTML - Glossaries
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Support the Mallard Glossary extension.
+
+This stylesheet contains templates and supporting JavaScript to support the
+Mallard Glossary extension in HTML.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>mal.cache]
+
+[list .compact]
+. Calls Keys
+* $link[>mal.gloss.key]
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>mal.gloss.terms]
+* $link[>mal.link.content]
+* $link[>mal.link.target]
+* $link[>mal.link.tooltip]
+
+[list .compact]
+. Calls Modes
+* $link[>mal2html.block.mode]
+* $link[>mal2html.inline.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>mal2html.inline.mode](mal2html.inline.mode)
+* $code(gloss:term)

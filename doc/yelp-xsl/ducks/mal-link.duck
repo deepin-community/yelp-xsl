@@ -1,0 +1,63 @@
+@ducktype/1.0
+
+= Mallard Links
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal]
+@desc Common linking utilities for Mallard documents.
+@revision[version=3.4 date=2012-01-17 status=final]
+
+This stylesheet contains various utilities for handling links in Mallard
+documents.  The templates in this stylesheet make it easier to handle the
+different linking mechanisms in Mallard, including the dynamic automatic
+linking systems.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>mal.cache]
+* $link[>mal.cache.file]
+* $link[>mal.link.default_root]
+* $link[>mal.link.extension]
+* $link[>mal.link.prefix]
+
+[list .compact]
+. Calls Keys
+* $link[>mal.cache.key]
+* $link[>mal.cache.link.key]
+
+[list .compact]
+. Calls Templates
+* $link[>l10n.gettext]
+* $link[>utils.email_address]
+
+[list .compact]
+. Calls Modes
+* $link[>mal.link.content.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>mal.link.content.mode](mal.link.content.mode)
+* $code(* | text())

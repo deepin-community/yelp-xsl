@@ -1,0 +1,65 @@
+@ducktype/1.0
+
+= DocBook Links
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db]
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>db.chunk.basename]
+* $link[>db.chunk.extension]
+
+[list .compact]
+. Calls Keys
+* $link[>db.id.key]
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.chunk-id]
+* $link[>db.subtitle]
+* $link[>db.title]
+* $link[>db.titleabbrev]
+* $link[>l10n.gettext]
+* $link[>utils.email_address]
+
+[list .compact]
+. Calls Modes
+* $link[>db.xref.tooltip.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>db.xref.tooltip.mode](db.xref.tooltip.mode)
+* $code(*)
+[tr]
+* $code[>db.xref.tooltip.mode](db.xref.tooltip.mode)
+* $code(biblioentry    | bibliomixed    |                                                  db:biblioentry | db:bibliomixed )
+[tr]
+* $code[>db.xref.tooltip.mode](db.xref.tooltip.mode)
+* $code(glossentry | db:glossentry)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:glossterm)

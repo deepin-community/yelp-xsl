@@ -1,0 +1,81 @@
+@ducktype/1.0
+
+= DocBook to HTML - Images and Media
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@desc Handle DocBook media elements.
+@revision[version=3.8 date=2012-11-13 status=final]
+
+This stylesheet contains templates for handling DocBook $sys(mediaobject) and
+$sys(inlinemediaobject) elements, as well as the various $sys(object) and $sys(data)
+elements found in these elements. This stylesheet also handles the deprecated
+DocBook 4 $sys(graphic) and $sys(inlinegraphic) elements.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>html.class.attr]
+* $link[>html.media.controls]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(mediaobject/audioobject/audiodata |                      db:mediaobject/db:audioobject/db:audiodata)
+[tr]
+* 
+* $code(inlinemediaobject/audioobject/audiodata |                      db:inlinemediaobject/db:audioobject/db:audiodata)
+[tr]
+* 
+* $code(audioobject | db:audioobject)
+[tr]
+* 
+* $code(graphic)
+[tr]
+* 
+* $code(imagedata | db:imagedata)
+[tr]
+* 
+* $code(imageobject | db:imageobject)
+[tr]
+* 
+* $code(inlinegraphic)
+[tr]
+* 
+* $code(inlinemediaobject | db:inlinemediaobject)
+[tr]
+* 
+* $code(mediaobject | db:mediaobject)
+[tr]
+* 
+* $code(mediaobject/videoobject/videodata |                      db:mediaobject/db:videoobject/db:videodata)
+[tr]
+* 
+* $code(inlinemediaobject/videoobject/videodata |                      db:inlinemediaobject/db:videoobject/db:videodata)
+[tr]
+* 
+* $code(videoobject | db:videoobject)

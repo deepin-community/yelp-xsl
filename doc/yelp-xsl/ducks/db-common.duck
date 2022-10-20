@@ -1,0 +1,45 @@
+@ducktype/1.0
+
+= DocBook Common
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db]
+
+This stylesheet module provides utility templates for DocBook that are
+independant of the target format.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>db.profile.test]
+* $link[>l10n.gettext]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:copyright.years)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:copyright.name)

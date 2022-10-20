@@ -1,0 +1,83 @@
+@ducktype/1.0
+
+= Mallard to HTML - Media Elements
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Handle Mallard media elements.
+@revision[version=3.8 date=2012-11-05 status=final]
+
+This stylesheet contains templates for handling Mallard $sys(media) elements.
+It also handles TTML inside block audio and video $sys(media) elements.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>html.media.controls]
+* $link[>mal.if.test]
+* $link[>mal2html.span]
+* $link[>ttml.profile]
+* $link[>ttml.profile.attr]
+* $link[>ttml.time.range]
+
+[list .compact]
+. Calls Modes
+* $link[>mal2html.block.mode]
+* $link[>mal2html.inline.mode]
+* $link[>mal2html.ttml.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(tt:*)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:media)
+[tr]
+* $code[>mal2html.inline.content.mode](mal2html.inline.content.mode)
+* $code(mal:media)
+[tr]
+* $code[>mal2html.inline.mode](mal2html.inline.mode)
+* $code(tt:span)
+[tr]
+* $code[>mal2html.inline.mode](mal2html.inline.mode)
+* $code(tt:br)
+[tr]
+* $code[>mal2html.inline.mode](mal2html.inline.mode)
+* $code(mal:media)
+[tr]
+* $code[>mal2html.ttml.mode](mal2html.ttml.mode)
+* $code(tt:tt)
+[tr]
+* $code[>mal2html.ttml.mode](mal2html.ttml.mode)
+* $code(tt:body)
+[tr]
+* $code[>mal2html.ttml.mode](mal2html.ttml.mode)
+* $code(tt:div)
+[tr]
+* $code[>mal2html.ttml.mode](mal2html.ttml.mode)
+* $code(tt:p)

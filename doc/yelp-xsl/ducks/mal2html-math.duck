@@ -1,0 +1,65 @@
+@ducktype/1.0
+
+= Mallard to HTML - MathML
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Handle MathML in Mallard documents.
+@revision[version=3.8 date=2012-11-13 status=final]
+
+This stylesheet matches embedded MathML in $code[>mal2html.block.mode](mal2html.block.mode) and
+$code[>mal2html.inline.mode](mal2html.inline.mode) and processes it in $code[>mal2html.math.mode](mal2html.math.mode). The
+matched templates for the $sys(mml:math) element automatically set the
+$sys(display) attribute based on whether the element is in block or inline
+context.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>mal.if.test]
+* $link[>mal.link.target]
+
+[list .compact]
+. Calls Modes
+* $link[>mal2html.math.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mml:math)
+[tr]
+* $code[>mal2html.inline.mode](mal2html.inline.mode)
+* $code(mml:math)
+[tr]
+* $code[>mal2html.math.mode](mal2html.math.mode)
+* $code(mml:*)
+[tr]
+* $code[>mal2html.math.mode](mal2html.math.mode)
+* $code(text())
+[tr]
+* $code[>mal2html.math.mode](mal2html.math.mode)
+* $code(*)

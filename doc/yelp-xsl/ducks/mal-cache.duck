@@ -1,0 +1,57 @@
+@ducktype/1.0
+
+= Mallard Cache Files
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal]
+@link[topic >mal-link group=includes]
+@desc Generate Mallard cache files from cache input files.
+
+FIXME
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>mal.link.linkid]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(/cache:cache)
+[tr]
+* 
+* $code(mal:stack)
+[tr]
+* 
+* $code(mal:page)
+[tr]
+* 
+* $code(mal:section)
+[tr]
+* 
+* $code(mal:title)
+[tr]
+* 
+* $code(node() | text())

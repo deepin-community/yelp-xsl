@@ -1,0 +1,64 @@
+@ducktype/1.0
+
+= DocBook to HTML - MathML
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@desc Handle MathML in DocBook documents.
+@revision[version=3.8 date=2012-11-13 status=final]
+
+This stylesheet matches embedded MathML and processes it in $code[>db2html.math.mode](db2html.math.mode).
+The matched templates for the $sys(mml:math) element automatically set the $sys(display)
+attribute based on whether the element is in block or inline context.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+
+[list .compact]
+. Calls Modes
+* $link[>db2html.math.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(equation/mml:math | informalequation/mml:math |                      db:equation/mml:math | db:informalequation/mml:math)
+[tr]
+* 
+* $code(inlineequation/mml:math | db:inlineequation/mml:math)
+[tr]
+* 
+* $code(db:imagedata[@format='mathml']/mml:math)
+[tr]
+* $code[>db2html.math.mode](db2html.math.mode)
+* $code(mml:*)
+[tr]
+* $code[>db2html.math.mode](db2html.math.mode)
+* $code(text())
+[tr]
+* $code[>db2html.math.mode](db2html.math.mode)
+* $code(*)

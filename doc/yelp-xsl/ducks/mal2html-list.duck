@@ -1,0 +1,76 @@
+@ducktype/1.0
+
+= Mallard to HTML - Lists
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Handle Mallard list elements.
+@revision[version=1.0 date=2010-06-04 status=final]
+
+This stylesheet contains templates for the $sys(list), $sys(steps), $sys(terms), and
+$sys(tree) elements in $code[>mal2html.block.mode](mal2html.block.mode). It handles the parent list elements,
+as well as any special processing for child $sys(item) elements.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>l10n.direction]
+* $link[>mal.if.test]
+* $link[>mal2html.ui.expander.class]
+* $link[>mal2html.ui.expander.data]
+
+[list .compact]
+. Calls Modes
+* $link[>mal2html.block.mode]
+* $link[>mal2html.inline.mode]
+* $link[>mal2html.tree.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(mal:list/mal:item)
+[tr]
+* 
+* $code(mal:steps/mal:item)
+[tr]
+* 
+* $code(mal:terms/mal:item)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:list)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:steps)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:terms)
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(mal:tree)
+[tr]
+* $code[>mal2html.tree.mode](mal2html.tree.mode)
+* $code(mal:item)

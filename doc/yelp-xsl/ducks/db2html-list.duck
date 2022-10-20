@@ -1,0 +1,129 @@
+@ducktype/1.0
+
+= DocBook to HTML - Lists
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@revision[version=3.28 date=2016-10-27 status=review]
+
+This stylesheet handles most list-like elements in DocBook, turning them into
+appropriate HTML tags.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>db.orderedlist.start]
+* $link[>db.profile.test]
+* $link[>db.xref.content]
+* $link[>db.xref.target]
+* $link[>db.xref.tooltip]
+* $link[>db2html.anchor]
+* $link[>db2html.inline]
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>l10n.gettext]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(glosslist | db:glosslist)
+[tr]
+* 
+* $code(glossdef | db:glossdef)
+[tr]
+* 
+* $code(glossentry | db:glossentry)
+[tr]
+* 
+* $code(glosssee | glossseealso | db:glosssee | db:glossseealso)
+[tr]
+* 
+* $code(itemizedlist | db:itemizedlist)
+[tr]
+* 
+* $code(itemizedlist/listitem | db:itemizedlist/db:listitem)
+[tr]
+* 
+* $code(member | db:member)
+[tr]
+* 
+* $code(orderedlist | db:orderedlist)
+[tr]
+* 
+* $code(orderedlist/listitem | db:orderedlist/db:listitem)
+[tr]
+* 
+* $code(procedure | db:procedure)
+[tr]
+* 
+* $code(answer | db:answer)
+[tr]
+* 
+* $code(qandaentry | db:qandaentry)
+[tr]
+* 
+* $code(question | db:question)
+[tr]
+* 
+* $code(seg | db:seg)
+[tr]
+* 
+* $code(seglistitem | db:seglistitem)
+[tr]
+* 
+* $code(segmentedlist | db:segmentedlist)
+[tr]
+* 
+* $code(segtitle | db:segtitle)
+[tr]
+* 
+* $code(simplelist | db:simplelist)
+[tr]
+* 
+* $code(result | db:result)
+[tr]
+* 
+* $code(step | db:step)
+[tr]
+* 
+* $code(stepalternatives | db:stepalternatives)
+[tr]
+* 
+* $code(substeps | db:substeps)
+[tr]
+* 
+* $code(term | db:term)
+[tr]
+* 
+* $code(variablelist | db:variablelist)
+[tr]
+* 
+* $code(varlistentry | db:varlistentry)
+[tr]
+* 
+* $code(varlistentry/listitem | db:varlistentry/db:listitem)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:glosssee)

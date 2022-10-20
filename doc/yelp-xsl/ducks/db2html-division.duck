@@ -1,0 +1,155 @@
+@ducktype/1.0
+
+= DocBook to HTML - Divisions
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@desc Handle division-level DocBook elements.
+@revision[version=3.8 date=2012-11-05 status=final]
+
+This stylesheet contains templates to process top-level and sectioning elements
+in DocBook. It handles chunking and implements the interfaces provided by the
+common $code[>html](html) stylesheet.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>db.chunk.max_depth]
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.depth-in-chunk]
+* $link[>db.chunk.depth-of-chunk]
+* $link[>db.copyright]
+* $link[>db.title]
+* $link[>db2html.anchor]
+* $link[>db2html.footnote.footer]
+* $link[>db2html.links.linktrail]
+* $link[>db2html.links.next]
+* $link[>db2html.links.section]
+* $link[>db2html.xref]
+* $link[>html.class.attr]
+* $link[>html.content.post]
+* $link[>html.content.pre]
+* $link[>html.lang.attrs]
+* $link[>html.output]
+* $link[>l10n.align.end]
+* $link[>l10n.align.start]
+* $link[>l10n.direction]
+* $link[>l10n.gettext]
+* $link[>tmpl.file]
+
+[list .compact]
+. Calls Modes
+* $link[>db2html.division.div.content.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(appendix | db:appendix)
+[tr]
+* 
+* $code(article | db:article)
+[tr]
+* 
+* $code(book | db:book)
+[tr]
+* 
+* $code(chapter | db:chapter)
+[tr]
+* 
+* $code(colophon | db:colophon)
+[tr]
+* 
+* $code(dedication | db:dedication)
+[tr]
+* 
+* $code(glossary | db:glossary)
+[tr]
+* 
+* $code(glossdiv | db:glossdiv)
+[tr]
+* 
+* $code(part | db:part)
+[tr]
+* 
+* $code(preface | db:preface)
+[tr]
+* 
+* $code(qandadiv | db:qandadiv)
+[tr]
+* 
+* $code(qandaset | db:qandaset)
+[tr]
+* 
+* $code(reference | db:reference)
+[tr]
+* 
+* $code(sect1 | db:sect1)
+[tr]
+* 
+* $code(sect2 | db:sect2)
+[tr]
+* 
+* $code(sect3 | db:sect3)
+[tr]
+* 
+* $code(sect4 | db:sect4)
+[tr]
+* 
+* $code(sect5 | db:sect5)
+[tr]
+* 
+* $code(section | db:section)
+[tr]
+* 
+* $code(simplesect | db:simplesect)
+[tr]
+* $code[>db2html.division.div.content.mode](db2html.division.div.content.mode)
+* $code(*)
+[tr]
+* $code[>html.body.mode](html.body.mode)
+* $code(*)
+[tr]
+* $code[>html.css.mode](html.css.mode)
+* $code(*)
+[tr]
+* $code[>html.footer.mode](html.footer.mode)
+* $code(*)
+[tr]
+* $code[>html.header.mode](html.header.mode)
+* $code(*)
+[tr]
+* $code[>html.output.after.mode](html.output.after.mode)
+* $code(*)
+[tr]
+* $code[>html.sidebar.contents.mode](html.sidebar.contents.mode)
+* $code(*)
+[tr]
+* $code[>html.sidebar.sections.mode](html.sidebar.sections.mode)
+* $code(*)
+[tr]
+* $code[>html.title.mode](html.title.mode)
+* $code(*)

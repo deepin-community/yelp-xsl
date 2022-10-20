@@ -1,0 +1,43 @@
+@ducktype/1.0
+
+= Mallard Topological Sort
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal]
+@desc Sort a Mallard document.
+@revision[version=1.0 date=2010-07-08]
+
+This stylesheet contains utilities for sorting the pages in a Mallard
+document based on their informational links.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>mal.cache]
+* $link[>mal.link.default_root]
+
+[list .compact]
+. Calls Keys
+* $link[>mal.cache.key]
+
+[list .compact]
+. Calls Templates
+* $link[>mal.link.linkid]
+* $link[>mal.link.topiclinks]
+* $link[>mal.link.xref.linkid]

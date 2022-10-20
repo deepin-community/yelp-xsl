@@ -1,0 +1,34 @@
+@ducktype/1.0
+
+= DocBook Chunking
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db]
+
+REMARK: Describe this module
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>db.chunk.basename]
+* $link[>db.chunk.max_depth]
+
+[list .compact]
+. Calls Keys
+* $link[>db.id.key]

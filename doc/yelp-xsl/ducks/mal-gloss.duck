@@ -1,0 +1,31 @@
+@ducktype/1.0
+
+= Mallard Glossaries
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal]
+@desc Common templates for the Mallard Glossary extension.
+
+This stylesheet contains utility templates for locating and linking to terms
+with the Mallard Glossary extension.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>mal.cache]

@@ -1,0 +1,72 @@
+@ducktype/1.0
+
+= DocBook to HTML - Function Synopses
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+
+REMARK: Describe this module
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>db2html.funcsynopsis.style]
+
+[list .compact]
+. Calls Templates
+* $link[>db2html.inline]
+* $link[>db2html.pre]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(funcdef | db:funcdef)
+[tr]
+* 
+* $code(funcparams | db:funcparams)
+[tr]
+* 
+* $code(funcprototype | db:funcprototype)
+[tr]
+* 
+* $code(funcsynopsis | db:funcsynopsis)
+[tr]
+* 
+* $code(funcsynopsisinfo | db:funcsynopsisinfo)
+[tr]
+* 
+* $code(initializer | db:initializer)
+[tr]
+* 
+* $code(modifier | db:modifier)
+[tr]
+* 
+* $code(paramdef | db:paramdef)
+[tr]
+* 
+* $code(varargs | db:varargs)
+[tr]
+* 
+* $code(void | db:void)

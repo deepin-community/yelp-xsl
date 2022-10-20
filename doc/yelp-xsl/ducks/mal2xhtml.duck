@@ -1,0 +1,57 @@
+@ducktype/1.0
+
+= Mallard to XHTML
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2xhtml]
+@link[topic >l10n group=imports]
+@link[topic >color group=imports]
+@link[topic >icons group=imports]
+@link[topic >html group=imports]
+@link[topic >ttml group=imports]
+@link[topic >tmpl group=imports]
+@link[topic >utils group=imports]
+@link[topic >mal-gloss group=imports]
+@link[topic >mal-if group=imports]
+@link[topic >mal-link group=imports]
+@link[topic >mal2html-api group=includes]
+@link[topic >mal2html-block group=includes]
+@link[topic >mal2html-gloss group=includes]
+@link[topic >mal2html-inline group=includes]
+@link[topic >mal2html-links group=includes]
+@link[topic >mal2html-list group=includes]
+@link[topic >mal2html-math group=includes]
+@link[topic >mal2html-media group=includes]
+@link[topic >mal2html-page group=includes]
+@link[topic >mal2html-svg group=includes]
+@link[topic >mal2html-table group=includes]
+@link[topic >mal2html-ui group=includes]
+@desc Transform Mallard to XHTML.
+@revision[version=3.8 date=2012-11-05 status=final]
+
+This top-level stylesheet includes all the necessary stylesheets to transform
+Mallard documents into XHTML. This stylesheet sets the parameters
+$code[>mal.if.target](mal.if.target), $code[>mal.if.features](mal.if.features), $code[>mal.if.maybe](mal.if.maybe), $code[>mal.link.extension](mal.link.extension),
+and $code[>ttml.features](ttml.features).
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>html.extension]
+* $link[>ttml.features]

@@ -1,0 +1,82 @@
+@ducktype/1.0
+
+= DocBook to HTML - Command Synopses
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@revision[version=1.0 date=2011-05-16 status=final]
+
+This module contains templates to process DocBook command synopsis elements.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Keys
+* $link[>db.id.key]
+
+[list .compact]
+. Calls Templates
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+
+[list .compact]
+. Calls Modes
+* $link[>db2html.cmdsynopsis.sbr.padding.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(arg | db:arg)
+[tr]
+* 
+* $code(cmdsynopsis | db:cmdsynopsis)
+[tr]
+* 
+* $code(group | db:group)
+[tr]
+* 
+* $code(synopfragment | db:synopfragment)
+[tr]
+* 
+* $code(synopfragmentref | db:synopfragmentref)
+[tr]
+* $code[>db2html.cmdsynopsis.sbr.padding.mode](db2html.cmdsynopsis.sbr.padding.mode)
+* $code(node())
+[tr]
+* $code[>db2html.cmdsynopsis.sbr.padding.mode](db2html.cmdsynopsis.sbr.padding.mode)
+* $code(cmdsynopsis | db:cmdsynopsis)
+[tr]
+* $code[>db2html.cmdsynopsis.sbr.padding.mode](db2html.cmdsynopsis.sbr.padding.mode)
+* $code(arg | db:arg)
+[tr]
+* $code[>db2html.cmdsynopsis.sbr.padding.mode](db2html.cmdsynopsis.sbr.padding.mode)
+* $code(group |                                                                  db:group)
+[tr]
+* $code[>db2html.cmdsynopsis.sbr.padding.mode](db2html.cmdsynopsis.sbr.padding.mode)
+* $code(synopfragment | db:synopfragment)
+[tr]
+* $code[>db2html.cmdsynopsis.sbr.padding.mode](db2html.cmdsynopsis.sbr.padding.mode)
+* $code(synopfragmentref | db:synopfragmentref)

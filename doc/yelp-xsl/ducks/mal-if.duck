@@ -1,0 +1,36 @@
+@ducktype/1.0
+
+= Mallard Conditionals
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal]
+@desc Support for run-time conditional processing.
+@revision[version=3.8 date=2012-11-05 status=final]
+
+This stylesheet contains utilities for handling conditional processing
+in Mallard documents.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>mal.if.custom]
+* $link[>mal.if.features]
+* $link[>mal.if.maybe]
+* $link[>mal.if.platform]
+* $link[>mal.if.target]

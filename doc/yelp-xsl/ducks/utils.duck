@@ -1,0 +1,28 @@
+@ducktype/1.0
+
+= Utilities
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=utils]
+@desc Common XSLT Utilities.
+@revision[version=1.0 date=2010-05-25 status=final]
+
+This stylesheet contains various useful utilities that are used throughout
+the Yelp stylesheets.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes

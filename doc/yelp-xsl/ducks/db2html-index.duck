@@ -1,0 +1,76 @@
+@ducktype/1.0
+
+= DocBook to HTML - Indexes
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+
+This module provides templates to process DocBook indexes.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Keys
+* $link[>db.index.all.key]
+* $link[>db.index.primary.key]
+* $link[>db.index.secondary.key]
+* $link[>db.index.tertiary.key]
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.depth-in-chunk]
+* $link[>db.chunk.depth-of-chunk]
+* $link[>db.profile.test]
+* $link[>db2html.division.div]
+* $link[>db2html.xref]
+* $link[>l10n.gettext]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(primaryie | db:primaryie)
+[tr]
+* 
+* $code(secondaryie | db:secondaryie)
+[tr]
+* 
+* $code(tertiaryie | db:tertiaryie)
+[tr]
+* 
+* $code(indexentry | db:indexentry)
+[tr]
+* 
+* $code(index | db:index)
+[tr]
+* 
+* $code(indexdiv | db:indexdiv)
+[tr]
+* 
+* $code(setindex | db:setindex)
+[tr]
+* $code[>db2html.division.div.content.mode](db2html.division.div.content.mode)
+* $code(index[count(indexentry | indexdiv) = 0] |                      db:index[count(db:indexentry | db:indexdiv) = 0])
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:seeie)

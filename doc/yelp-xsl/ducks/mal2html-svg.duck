@@ -1,0 +1,56 @@
+@ducktype/1.0
+
+= Mallard to HTML - SVG
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+@desc Handle embedded SVG.
+@revision[version=1.0 date=2010-06-04 status=final]
+
+This stylesheet matches embedded SVG in $code[>mal2html.block.mode](mal2html.block.mode) and processes it
+in $code[>mal2html.svg.mode](mal2html.svg.mode).
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>mal.if.test]
+* $link[>mal.link.content]
+* $link[>mal.link.target]
+
+[list .compact]
+. Calls Modes
+* $link[>mal2html.svg.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* $code[>mal2html.block.mode](mal2html.block.mode)
+* $code(svg:svg)
+[tr]
+* $code[>mal2html.svg.mode](mal2html.svg.mode)
+* $code(svg:*)
+[tr]
+* $code[>mal2html.svg.mode](mal2html.svg.mode)
+* $code(text())

@@ -1,0 +1,140 @@
+@ducktype/1.0
+
+= HTML Output
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=html]
+@desc Common utilities and CSS for transformations to HTML.
+@revision[version=1.0 date=2010-05-26 status=final]
+
+This stylesheet contains common templates for creating HTML output. The
+$code[>html.output](html.output) template creates an output file for a node in the source XML
+document, calling $code[>html.page](html.page) to create the actual output. Output files can
+be either XHTML or HTML, depending on the $code[>html.xhtml](html.xhtml) parameter.
+
+This stylesheet matches $sys(/) and calls $code[>html.output](html.output) on the root XML element.
+This works for most input formats. If you need to do something different, you
+should override the match for $sys(/).
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>color.bg.gray]
+* $link[>color.fg.dark]
+* $link[>color.gray]
+* $link[>html.basename]
+* $link[>html.extension]
+* $link[>html.grid.size]
+* $link[>html.sidebar.left]
+* $link[>html.sidebar.right]
+* $link[>html.syntax.highlight]
+* $link[>html.xhtml]
+
+[list .compact]
+. Calls Templates
+* $link[>icons.svg.media.pause]
+* $link[>icons.svg.media.play]
+* $link[>l10n.align.end]
+* $link[>l10n.align.start]
+* $link[>l10n.direction]
+* $link[>l10n.gettext]
+* $link[>tmpl.file]
+
+[list .compact]
+. Calls Modes
+* $link[>html.body.attr.mode]
+* $link[>html.body.mode]
+* $link[>html.class.attr.mode]
+* $link[>html.content.post.mode]
+* $link[>html.content.pre.mode]
+* $link[>html.css.mode]
+* $link[>html.footer.mode]
+* $link[>html.header.mode]
+* $link[>html.js.mode]
+* $link[>html.output.after.mode]
+* $link[>html.sidebar.contents.mode]
+* $link[>html.sidebar.mode]
+* $link[>html.sidebar.sections.mode]
+* $link[>html.syntax.class.mode]
+* $link[>html.title.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(/)
+[tr]
+* $code[>html.body.attr.mode](html.body.attr.mode)
+* $code(*)
+[tr]
+* $code[>html.body.mode](html.body.mode)
+* $code(*)
+[tr]
+* $code[>html.class.attr.mode](html.class.attr.mode)
+* $code(*)
+[tr]
+* $code[>html.content.post.mode](html.content.post.mode)
+* $code(*)
+[tr]
+* $code[>html.content.pre.mode](html.content.pre.mode)
+* $code(*)
+[tr]
+* $code[>html.css.mode](html.css.mode)
+* $code(*)
+[tr]
+* $code[>html.footer.mode](html.footer.mode)
+* $code(*)
+[tr]
+* $code[>html.header.mode](html.header.mode)
+* $code(*)
+[tr]
+* $code[>html.js.mode](html.js.mode)
+* $code(*)
+[tr]
+* $code[>html.output.after.mode](html.output.after.mode)
+* $code(*)
+[tr]
+* $code[>html.sidebar.contents.mode](html.sidebar.contents.mode)
+* $code(*)
+[tr]
+* $code[>html.sidebar.mode](html.sidebar.mode)
+* $code(token[. = 'blank'])
+[tr]
+* $code[>html.sidebar.mode](html.sidebar.mode)
+* $code(*)
+[tr]
+* $code[>html.sidebar.mode](html.sidebar.mode)
+* $code(token[. = 'contents'])
+[tr]
+* $code[>html.sidebar.mode](html.sidebar.mode)
+* $code(token[. = 'sections'])
+[tr]
+* $code[>html.sidebar.sections.mode](html.sidebar.sections.mode)
+* $code(*)
+[tr]
+* $code[>html.syntax.class.mode](html.syntax.class.mode)
+* $code(*)
+[tr]
+* $code[>html.title.mode](html.title.mode)
+* $code(*)

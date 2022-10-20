@@ -1,0 +1,41 @@
+@ducktype/1.0
+
+= DocBook to HTML - Footnotes
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+
+FIXME: Describe this module
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.depth-of-chunk]
+* $link[>html.class.attr]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(footnote | db:footnote)

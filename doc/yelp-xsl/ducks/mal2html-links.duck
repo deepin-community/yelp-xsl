@@ -1,0 +1,91 @@
+@ducktype/1.0
+
+= Mallard to HTML - Links
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=mal2html]
+
+This stylesheet contains templates to handle automatic linking, both using the
+Mallard links element and implicitly.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>mal.cache]
+
+[list .compact]
+. Calls Keys
+* $link[>mal.cache.key]
+* $link[>mal.cache.link.key]
+
+[list .compact]
+. Calls Templates
+* $link[>html.class.attr]
+* $link[>l10n.gettext]
+* $link[>mal.link.content]
+* $link[>mal.link.desc]
+* $link[>mal.link.linkid]
+* $link[>mal.link.target]
+* $link[>mal.link.tooltip]
+* $link[>mal2html.api.links.function]
+* $link[>mal2html.editor.badge]
+* $link[>mal2html.ui.expander.class]
+* $link[>mal2html.ui.expander.data]
+* $link[>mal2html.ui.links.img]
+* $link[>mal2html.ui.links.tiles]
+
+[list .compact]
+. Calls Modes
+* $link[>_mal2html.links.divs.nolink.mode]
+* $link[>mal2html.block.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(mal:links)
+[tr]
+* 
+* $code(mal:links[@type = 'guide'])
+[tr]
+* 
+* $code(mal:links[@type = 'prevnext'])
+[tr]
+* 
+* $code(mal:links[@type = 'section'])
+[tr]
+* 
+* $code(mal:links[@type = 'seealso'])
+[tr]
+* 
+* $code(mal:links[@type = 'series'])
+[tr]
+* 
+* $code(mal:links[@type = 'topic'])
+[tr]
+* $code[>_mal2html.links.divs.nolink.mode](_mal2html.links.divs.nolink.mode)
+* $code(*)
+[tr]
+* $code[>_mal2html.links.divs.nolink.mode](_mal2html.links.divs.nolink.mode)
+* $code(*[@href])

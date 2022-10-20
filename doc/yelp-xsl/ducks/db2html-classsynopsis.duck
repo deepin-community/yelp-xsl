@@ -1,0 +1,103 @@
+@ducktype/1.0
+
+= DocBook to HTML - Class Synopses
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@revision[version=1.0 date=2011-05-16 status=final]
+
+This module handles the DocBook $sys(classsynopsis) and related elements. The
+contents of the class-modeling elements are processed in a mode depending on
+the programming language to format the synopsis correctly.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>db2html.classsynopsis.language]
+
+[list .compact]
+. Calls Templates
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+
+[list .compact]
+. Calls Modes
+* $link[>db2html.class.cpp.mode]
+* $link[>db2html.class.python.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(               classsynopsis     | constructorsynopsis    | fieldsynopsis |               methodsynopsis    | destructorsynopsis     |               db:classsynopsis  | db:constructorsynopsis | db:fieldsynopsis |               db:methodsynopsis | db:destructorsynopsis  )
+[tr]
+* 
+* $code(classsynopsisinfo | db:classsynopsisinfo)
+[tr]
+* 
+* $code(methodparam | db:methodparam)
+[tr]
+* $code[>db2html.class.cpp.mode](db2html.class.cpp.mode)
+* $code(*)
+[tr]
+* $code[>db2html.class.cpp.mode](db2html.class.cpp.mode)
+* $code(classsynopsis | db:classsynopsis)
+[tr]
+* $code[>db2html.class.cpp.mode](db2html.class.cpp.mode)
+* $code(constructorsynopsis | db:constructorsynopsis)
+[tr]
+* $code[>db2html.class.cpp.mode](db2html.class.cpp.mode)
+* $code(destructorsynopsis | db:destructorsynopsis)
+[tr]
+* $code[>db2html.class.cpp.mode](db2html.class.cpp.mode)
+* $code(fieldsynopsis | db:fieldsynopsis)
+[tr]
+* $code[>db2html.class.cpp.mode](db2html.class.cpp.mode)
+* $code(methodparam | db:methodparam)
+[tr]
+* $code[>db2html.class.cpp.mode](db2html.class.cpp.mode)
+* $code(methodsynopsis | db:methodsynopsis)
+[tr]
+* $code[>db2html.class.python.mode](db2html.class.python.mode)
+* $code(*)
+[tr]
+* $code[>db2html.class.python.mode](db2html.class.python.mode)
+* $code(classsynopsis | db:classsynopsis)
+[tr]
+* $code[>db2html.class.python.mode](db2html.class.python.mode)
+* $code(constructorsynopsis | db:constructorsynopsis)
+[tr]
+* $code[>db2html.class.python.mode](db2html.class.python.mode)
+* $code(destructorsynopsis | db:destructorsynopsis)
+[tr]
+* $code[>db2html.class.python.mode](db2html.class.python.mode)
+* $code(fieldsynopsis | db:fieldsynopsis)
+[tr]
+* $code[>db2html.class.python.mode](db2html.class.python.mode)
+* $code(methodparam | db:methodparam)
+[tr]
+* $code[>db2html.class.python.mode](db2html.class.python.mode)
+* $code(methodsynopsis | db:methodsynopsis)

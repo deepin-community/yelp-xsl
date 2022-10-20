@@ -1,0 +1,86 @@
+@ducktype/1.0
+
+= DocBook to HTML - Reference Pages
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+
+REMARK: Describe this module. Talk about refenty and friends
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.depth-in-chunk]
+* $link[>db.chunk.depth-of-chunk]
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>db2html.division.div]
+* $link[>db2html.inline]
+* $link[>html.class.attr]
+* $link[>l10n.gettext]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(citerefentry | db:citerefentry)
+[tr]
+* 
+* $code(citerefentry/refentrytitle | db:citerefentry/db:refentrytitle)
+[tr]
+* 
+* $code(manvolnum | db:manvolnum)
+[tr]
+* 
+* $code(refentry | db:refentry)
+[tr]
+* 
+* $code(refdescriptor | db:refdescriptor)
+[tr]
+* 
+* $code(refname | db:refname)
+[tr]
+* 
+* $code(refnamediv | db:refnamediv)
+[tr]
+* 
+* $code(refpurpose | db:refpurpose)
+[tr]
+* 
+* $code(refsect1 | db:refsect1)
+[tr]
+* 
+* $code(refsect2 | db:refsect2)
+[tr]
+* 
+* $code(refsect3 | db:refsect3)
+[tr]
+* 
+* $code(refsection | db:refsection)
+[tr]
+* 
+* $code(refsynopsisdiv | db:refsynopsisdiv)
+[tr]
+* $code[>db2html.division.div.content.mode](db2html.division.div.content.mode)
+* $code(refentry |                                                               db:refentry)

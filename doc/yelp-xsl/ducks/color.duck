@@ -1,0 +1,53 @@
+@ducktype/1.0
+
+= Colors
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=color]
+@desc Common named colors and color utilities for output styling.
+@revision[version=3.28 date=2016-01-03 status=final]
+
+This stylesheet provides a common interface to specify custom colors for
+transformations to presentation-oreinted formats. This allows similar
+output for different types of input documents.
+
+This stylesheet also provides a number of templates for manipulating colors
+and extracting information about colors.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Parameters
+* $link[>color.bg]
+* $link[>color.bg.blue]
+* $link[>color.bg.dark]
+* $link[>color.bg.gray]
+* $link[>color.bg.red]
+* $link[>color.bg.yellow]
+* $link[>color.blue]
+* $link[>color.fg]
+* $link[>color.fg.blue]
+* $link[>color.fg.dark]
+* $link[>color.fg.purple]
+* $link[>color.fg.red]
+* $link[>color.gray]
+* $link[>color.green]
+* $link[>color.orange]
+* $link[>color.purple]
+* $link[>color.red]
+* $link[>color.yellow]

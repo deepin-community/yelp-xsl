@@ -1,0 +1,152 @@
+@ducktype/1.0
+
+= DocBook to HTML - Bibliographies
+  [guide .xslt-stylesheet]
+@link[guide >stylesheets group=db2html]
+@revision[version=3.4 date=2011-11-14 status=final]
+
+This module provides templates to process DocBook bibliograpies.
+
+[links topic groups=imports .linklist]
+. Imports Stylesheets
+
+[links topic groups=includes .linklist]
+. Includes Stylesheets
+
+[links topic groups=params .linklist]
+. Defines Parameters
+
+[links topic groups=keys .linklist]
+. Defines Keys
+
+[links topic groups=templates .linklist]
+. Defines Templates
+
+[links topic groups=modes .linklist]
+. Defines Modes
+
+[list .compact]
+. Calls Templates
+* $link[>db.chunk.depth-in-chunk]
+* $link[>db.chunk.depth-of-chunk]
+* $link[>db.copyright]
+* $link[>db.personname]
+* $link[>db.personname.list]
+* $link[>db.profile.test]
+* $link[>db2html.anchor]
+* $link[>db2html.block.formal]
+* $link[>db2html.division.div]
+* $link[>html.class.attr]
+* $link[>html.lang.attrs]
+* $link[>l10n.gettext]
+
+[list .compact]
+. Calls Modes
+* $link[>db2html.biblioentry.mode]
+
+[table rules=rows]
+. Implements Templates
+[thead]
+[tr]
+- Mode
+- Match
+[tbody]
+[tr]
+* 
+* $code(bibliography | db:bibliography)
+[tr]
+* 
+* $code(bibliodiv | db:bibliodiv)
+[tr]
+* 
+* $code(biblioentry | db:biblioentry)
+[tr]
+* 
+* $code(bibliomixed | db:bibliomixed)
+[tr]
+* 
+* $code(bibliolist | db:bibliolist)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(*)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(abstract | db:abstract)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(affiliation | db:affiliation)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(author | db:author)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(authorblurb)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(authorgroup | db:authorgroup)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(biblioset | db:biblioset)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(citerefentry | db:citerefentry)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(collab | db:collab)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(copyright | db:copyright)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(db:cover)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(editor | db:editor)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(footnote | footnoteref | db:footnote | db:footnoteref)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(glossterm | db:glossterm)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(indexterm | db:indexterm)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(legalnotice | db:legalnotice)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(mediaobject | db:mediaobject)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(db:org)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(othercredit | db:othercredit)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(db:person)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(personname | db:personname)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(personblurb | db:personblurb)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(publisher | db:publisher)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(printhistory | db:printhistory)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(subscript | db:subscript)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(superscript | db:superscript)
+[tr]
+* $code[>db2html.biblioentry.mode](db2html.biblioentry.mode)
+* $code(revhistory | db:revhistory)
+[tr]
+* $code[>l10n.format.mode](l10n.format.mode)
+* $code(msg:biblioentry.label)
